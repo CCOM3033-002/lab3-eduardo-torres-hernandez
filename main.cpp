@@ -30,6 +30,25 @@ int main()
         else 
             cout<< numeroAleatorio3 << ' ' <<numeroAleatorio2 << endl;
     }
-    else if 
+    else if (numeroAleatorio2 >= numeroAleatorio1 && numeroAleatorio2 >= numeroAleatorio3) 
+    { 
+         cout << numeroAleatorio2 << ' ';
+         if ( numeroAleatorio1 >= numeroAleatorio3)
+            cout << numeroAleatorio1 << ' ' << numeroAleatorio3 << endl;
+        else 
+            cout << numeroAleatorio3 << ' ' << numeroAleatorio1 << endl;
+
+    }
+    else if (numeroAleatorio3 >= numeroAleatorio2 && numeroAleatorio3 >= numeroAleatorio1)
+    {
+        cout << numeroAleatorio3 << ' ' ;
+        if ( numeroAleatorio2 >= numeroAleatorio1)
+            cout << numeroAleatorio2 << ' ' << numeroAleatorio1 << endl;
+        else 
+            cout << numeroAleatorio1 << ' ' << numeroAleatorio2 << endl;
+
+    }
+
+    return 0; 
 }
 

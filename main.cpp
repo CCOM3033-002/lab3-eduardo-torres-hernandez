@@ -20,32 +20,32 @@ int main()
 
     cout<< " Números aleatorios generados: "<< numeroAleatorio1 << ", " << numeroAleatorio2<< ", "<< numeroAleatorio3<< endl;
     
-    cout<< "Orden descendiente:";
+    cout<< "Orden descendiente: ";
     // crear el orden de descendencia 
     if ( numeroAleatorio1 >= numeroAleatorio2 && numeroAleatorio1 >= numeroAleatorio3)
     { 
-        cout<< numeroAleatorio1 << ' ';
+        cout<< numeroAleatorio1 << ", ";
         if (numeroAleatorio2>= numeroAleatorio3)
-            cout<< numeroAleatorio2 << ' ' <<numeroAleatorio3 << endl;
+            cout<< numeroAleatorio2 << ", " <<numeroAleatorio3 << endl;
         else 
-            cout<< numeroAleatorio3 << ' ' <<numeroAleatorio2 << endl;
+            cout<< numeroAleatorio3 << ", " <<numeroAleatorio2 << endl;
     }
     else if (numeroAleatorio2 >= numeroAleatorio1 && numeroAleatorio2 >= numeroAleatorio3) 
     { 
-         cout << numeroAleatorio2 << ' ';
+         cout << numeroAleatorio2 << ", ";
          if ( numeroAleatorio1 >= numeroAleatorio3)
-            cout << numeroAleatorio1 << ' ' << numeroAleatorio3 << endl;
+            cout << numeroAleatorio1 << ", " << numeroAleatorio3 << endl;
         else 
-            cout << numeroAleatorio3 << ' ' << numeroAleatorio1 << endl;
+            cout << numeroAleatorio3 << ", " << numeroAleatorio1 << endl;
 
     }
     else if (numeroAleatorio3 >= numeroAleatorio2 && numeroAleatorio3 >= numeroAleatorio1)
     {
-        cout << numeroAleatorio3 << ' ' ;
+        cout << numeroAleatorio3 << ", ";
         if ( numeroAleatorio2 >= numeroAleatorio1)
-            cout << numeroAleatorio2 << ' ' << numeroAleatorio1 << endl;
+            cout << numeroAleatorio2 << ", " << numeroAleatorio1 << endl;
         else 
-            cout << numeroAleatorio1 << ' ' << numeroAleatorio2 << endl;
+            cout << numeroAleatorio1 << ", " << numeroAleatorio2 << endl;
 
     }
 

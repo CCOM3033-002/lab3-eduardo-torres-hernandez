@@ -3,7 +3,8 @@ Lab3: Tres numero aleatorios
 Eduardo Torres
 801-24-6862
 Colaboraciones:
-
+Lillian A. Gonzales Albino
+Gabriel A. Santiago Plaza
 */
 #include <iostream>
 #include <cstdlib>
@@ -23,30 +24,54 @@ int main()
     cout<< " Números aleatorios generados: "<< numeroAleatorio1 << ", " << numeroAleatorio2<< ", "<< numeroAleatorio3<< endl;
     cout<< "Orden descendiente: ";
 
-    // crear el orden de descendencia 
+    // crear el orden de descendencia
 
+    // Caso #1:
+    
     if ( numeroAleatorio1 >= numeroAleatorio2 && numeroAleatorio1 >= numeroAleatorio3)
     { 
+
+    // numeroAleatorio 1 es el mayor:
         cout<< numeroAleatorio1 << ", ";
+
+    // numeroAleatorio3 es el menor:
+
         if (numeroAleatorio2>= numeroAleatorio3)
             cout<< numeroAleatorio2 << ", " <<numeroAleatorio3 << endl;
+    // numeroAlearorio 2 es el menor:
         else 
             cout<< numeroAleatorio3 << ", " <<numeroAleatorio2 << endl;
     }
+    // Caso #2
+
     else if (numeroAleatorio2 >= numeroAleatorio1 && numeroAleatorio2 >= numeroAleatorio3) 
     { 
-         cout << numeroAleatorio2 << ", ";
-         if ( numeroAleatorio1 >= numeroAleatorio3)
+
+    // numeroAleatorio2 es el mayor:
+        cout << numeroAleatorio2 << ", ";
+
+    // numeroAleatorio3 es el menor:
+
+        if ( numeroAleatorio1 >= numeroAleatorio3)
             cout << numeroAleatorio1 << ", " << numeroAleatorio3 << endl;
+    // numeroAleatorio1 es el menor:
         else 
             cout << numeroAleatorio3 << ", " << numeroAleatorio1 << endl;
 
     }
+    //Caso #3
     else if (numeroAleatorio3 >= numeroAleatorio2 && numeroAleatorio3 >= numeroAleatorio1)
     {
+    // numeroAleatorio3 es el mayor:
+
         cout << numeroAleatorio3 << ", ";
+    // numeroAleatorio 1 es el menor: 
+
         if ( numeroAleatorio2 >= numeroAleatorio1)
             cout << numeroAleatorio2 << ", " << numeroAleatorio1 << endl;
+
+    // numeroAleatorio2 es el menor
+
         else 
             cout << numeroAleatorio1 << ", " << numeroAleatorio2 << endl;
 

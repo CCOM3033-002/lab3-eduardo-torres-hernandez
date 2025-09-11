@@ -18,10 +18,13 @@ int main()
     int numeroAleatorio2 = rand() % (100 - 0 +1) + 0;
     int numeroAleatorio3= rand() % (100 - 0 +1) + 0;
 
+    // desplegar los numeros aleatorios generados y luego la version en orden de descendencia
+
     cout<< " Números aleatorios generados: "<< numeroAleatorio1 << ", " << numeroAleatorio2<< ", "<< numeroAleatorio3<< endl;
-    
     cout<< "Orden descendiente: ";
+
     // crear el orden de descendencia 
+
     if ( numeroAleatorio1 >= numeroAleatorio2 && numeroAleatorio1 >= numeroAleatorio3)
     { 
         cout<< numeroAleatorio1 << ", ";
